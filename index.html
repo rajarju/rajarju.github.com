@@ -2,7 +2,7 @@
 <html>
   <head>
     <script>
-      
+
       window.requestAnimationFrame = (function(){
         //Check for each browser
         //@paul_irish function
@@ -60,7 +60,7 @@
           var tf = time/1000/blob.wperiod;
           var wf = (tf-Math.floor(tf))*2*Math.PI;
           var xw = blob.wobble*(Math.sin(wf)-0.5);
-       
+
           var rg = ctx.createRadialGradient(
           blob.x+xw+blob.r/4,blob.y-blob.r/4,blob.r/5,
           blob.x+xw,blob.y,blob.r);
@@ -69,7 +69,7 @@
           rg.addColorStop(1, 'rgba(2,96,236,0)');
           ctx.fillStyle = rg;
           ctx.fillRect(blob.x+xw-blob.r,blob.y-blob.r,blob.r*2,blob.r*2);
-       
+
           // update blob pos
           blob.x += blob.vx;
           blob.y += blob.vy;
@@ -153,10 +153,10 @@
         -o-transition: all 0.2s ease-in;
       }
       #hello:hover p{
-        text-shadow: 0px 0px 1px black;        
+        text-shadow: 0px 0px 1px black;
       }
       #help{
-        text-align: center;       
+        text-align: center;
         position: absolute;
         z-index: 1000;
         bottom: 0px;
@@ -165,24 +165,24 @@
       #help p{
         font-size: 12px;
       }
-      
+
       #canv{
         height: 100%;
         width: 100%;
       }
-  
+
     </style>
   </head>
   <body>
     <canvas id="canv" class="output" onclick="" style="position: fixed; z-index: 1; top: 0; left: 0;"></canvas>
     <div id="hello">
-      <img src="https://avatars0.githubusercontent.com/u/273188?v=3&s=460" alt="prem nazi">
+      <img src="https://avatars0.githubusercontent.com/u/273188?v=3&s=460" alt="prem">
       <p>Hi there.<br> We are undergoing some maintenance, plese come back later.</p>
     </div>
     <div id="help">
       <p>Click any where on the page</p>
       <div>
-        <a href="http://github.com/rajarju">github page</a> | 
+        <a href="http://github.com/rajarju">github page</a> |
         <a target="_blank" href="http://athousandnodes.com">athousandnodes.com</a>
       </div>
     </div>
