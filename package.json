@@ -21,6 +21,8 @@
   },
   "homepage": "https://github.com/rajarju/rajarju.github.com",
   "devDependencies": {
+    "browser-sync": "^2.10.0",
+    "gulp": "^3.9.0",
     "gulp-markdown": "^1.2.0"
   }
 }
