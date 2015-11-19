@@ -1,6 +1,11 @@
+/**
+ * gulp
+ * Basic tasks for local dev
+ */
+
+
 var gulp        = require('gulp');
 var browserSync = require('browser-sync').create();
-
 
 
 // Static server

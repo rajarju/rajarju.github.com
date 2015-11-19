@@ -1,5 +1,7 @@
 body{
   font-family: 'Lobster', cursive;
+  margin: 0;
+  padding: 0;
 }
 
 a, p, a:visited{
