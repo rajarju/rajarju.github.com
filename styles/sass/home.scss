@@ -1,0 +1,73 @@
+//colors
+$white: #fff;
+$color_cod_gray_approx: #060606;
+$black:  black;
+
+//fonts
+$font_0: Lobster;
+$font_1: cursive;
+
+body {
+	font-family: $font_0, $font_1;
+	margin: 0;
+	padding: 0;
+  -webkit-user-select: none;
+}
+a {
+	color: $white;
+	font-size: 10px;
+	&:visited {
+		color: $white;
+		font-size: 10px;
+	}
+}
+p {
+	color: $white;
+	font-size: 10px;
+}
+#hello {
+	position: absolute;
+	z-index: 1000;
+	width: 160px;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	height: 180px;
+	margin: -90px 0 0 -90px;
+	img {
+		max-width: 100%;
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 5px;
+		border: 2px solid $white;
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 2px 2px 14px $color_cod_gray_approx;
+	}
+	p {
+		color: transparent;
+		font-size: 20px;
+		//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		text-shadow: 0 0 10px $black;
+	}
+	&:hover p {
+		//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		text-shadow: 0 0 1px $black;
+	}
+}
+#help {
+	text-align: center;
+	position: absolute;
+	z-index: 1000;
+	bottom: 0;
+	width: 99%;
+	p {
+		font-size: 12px;
+	}
+}
+#canv {
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+}
