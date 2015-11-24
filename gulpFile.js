@@ -7,10 +7,12 @@
 var gulp        = require('gulp');
 var browserSync = require('browser-sync').create();
 var sass        = require('gulp-sass');
+var debug       = require('gulp-debug');
 
 
 // Static server
 gulp.task('serve', function() {
+
     browserSync.init({
         server: {
             baseDir: './'
@@ -24,10 +26,11 @@ gulp.task('serve', function() {
 
 gulp.task('sass', function(){
   return gulp.src([
-      'bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss',
       'styles/sass/*.scss'
     ])
+    .pipe(debug())
     .pipe(sass())
+    .pipe(debug())
     .pipe(gulp.dest('styles/css'))
     .pipe(browserSync.stream());
 });
