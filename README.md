@@ -1,3 +1,4 @@
 # naughtydavid.github.com
-my github
+- my github
+- blog
 
