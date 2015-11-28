@@ -9,7 +9,6 @@ var browserSync = require('browser-sync').create();
 var sass        = require('gulp-sass');
 var debug       = require('gulp-debug');
 
-
 // Static server
 gulp.task('serve', function() {
 
@@ -20,7 +19,7 @@ gulp.task('serve', function() {
     });
 
     gulp.watch('styles/sass/*.scss', ['sass']);
-    gulp.watch(['*.html', '**/*.html']).on('change', browserSync.reload);
+    gulp.watch(['*.html', 'blog/**/*.html']).on('change', browserSync.reload);
 });
 
 

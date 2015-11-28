@@ -69,3 +69,6 @@ theme: landscape
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type:
+
+# Disqus
+disqus_shortname: 1000nodes
