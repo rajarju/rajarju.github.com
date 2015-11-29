@@ -308,6 +308,12 @@ body {
 .widget dt {
   font-weight: bold;
 }
+.gist {
+  background-color: #fff !important;
+}
+.gist-meta {
+  background-color: #fff !important;
+}
 #header {
   height: 300px;
   position: relative;
