@@ -1,0 +1,19 @@
+language: node_js
+branches:
+  only:
+  - master
+before_install:
+- cd hexo_blog
+- npm install -g hexo
+- npm install
+before_script:
+- git config --global user.name 'Arjun Raj'
+- git config --global user.email 'rajarju@gmail.com'
+- sed -i'' "s~git@github.com:sazzer/blog.git~https://${GH_TOKEN}:x-oauth-basic@github.com/sazzer/blog.git~"
+install:
+- hexo generate
+script:
+- hexo deploy --silent
+env:
+  global:
+    secure: bkISmGNQmHaFww+K4awyC+RyH8s0O/Rq85H/CrF+BmyVjZ0LtAIXdIBDm5E/c5XkOaPXq3KZ0CUDL3Q/YwGWtNf7AUUvBdgEH2efwgaDBI/jYvuCpX6t0ljt8KMF8w8eiMLEYm7Lnep67PtlxwQViXWd9x9oBx3sSKXAD6GdbqI=
