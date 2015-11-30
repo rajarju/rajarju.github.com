@@ -65,10 +65,16 @@ pagination_dir: page
 ## Themes: http://hexo.io/themes/
 theme: landscape
 
+sitemap:
+    path: sitemap.xml
+
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: git@github.com:rajarju/rajarju.github.com.git
+  branch: master
+
 
 # Disqus
 disqus_shortname: 1000nodes
