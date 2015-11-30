@@ -1,7 +1,7 @@
 language: node_js
 branches:
   only:
-  - master
+  - gh-pages
 before_install:
 - cd hexo_blog
 - npm install -g hexo
