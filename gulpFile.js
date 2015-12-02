@@ -35,6 +35,8 @@ gulp.task('sass', function(){
 });
 
 
-gulp.task('default', function(){
+gulp.task('default', [
+      'sass'
+    ],function(){
 
 });
