@@ -8,6 +8,7 @@ For creating a custom touch pad, we add a blank image object to the Canvas. We c
 position this from UI with respect to the camera. We can attache a sprite to this 
 to make it easier for players to identiy the input area and its purpose.
 
-
+The SimpleTouchPad Class exposes a method which can be checked from the game objet controller 
+to see if there are any movements triggered
 
 <script src="https://gist.github.com/rajarju/c85b40c7ed84f02c189e.js"></script>
