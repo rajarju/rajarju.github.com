@@ -10,7 +10,7 @@ Using A matrix equation for calculating super huge fibonacci numbers.
 
 What we are trying to achieve is
 ```
-F(n) % n
+F(n) % n # Where F(n) is the nth Fibonacci Number.
 ```
 
 Below is the python code for the same.
